@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Styles } from "../style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../HOC";
 
 const ServicesCard = ({ title, index, icon }) => {
   return (
@@ -57,4 +58,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About,"about");
